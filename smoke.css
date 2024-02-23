@@ -1,0 +1,72 @@
+body{
+    background-image: url(image_search_1707152707538.png);
+}
+section{
+    height: 100vh;
+}
+h1{
+    position: absolute;
+    top:70%;
+    left: 45%;
+    color: skyblue;
+    font-size: 5rem;
+    letter-spacing: 0.1rem;
+}
+h1 span{
+    opacity: 0;
+    display: inline-block;
+    animation: anime 5s linear forwards;
+    animation-iteration-count: infinite;
+}
+@keyframes anime {
+    0%{
+        opacity: 1;
+    }
+}
+h1 span:nth-child(1){
+    animation-delay: 1.25s;
+}
+h1 span:nth-child(2){
+    animation-delay: 1.25s;
+}
+h1 span:nth-child(3){
+    animation-delay: 1.25s;
+}
+h1 span:nth-child(4){
+    animation-delay: 1.25s;
+}
+h1 span:nth-child(5){
+    animation-delay: 1.25s;
+}
+h1 span:nth-child(6){
+    animation-delay: 1.25s;
+}
+h1 span:nth-child(7){
+    animation-delay: 1.25s;
+}
+h1 span:nth-child(8){
+    animation-delay: 1.25s;
+}
+.bt{
+    background-image:url(image_search_1707152707538.png);
+    border: none;
+    font-size: 20px;
+    margin-left: 1200px;
+    position: relative;
+    margin-top : 658px;
+}
+a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+   }
+   a:visited {
+     color: black;
+     background-color: transparent;
+     text-decoration: none;
+   }
+   a:active {
+     color: black;
+     background-color: transparent;
+     text-decoration: underline;
+   }

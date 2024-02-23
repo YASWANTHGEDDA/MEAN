@@ -1,0 +1,59 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Register page</title>
+    <link rel="stylesheet" href="register.css">
+    <script src="register.js"></script>
+</head>
+<body>
+    <form id="register" onsubmit="return validate()">
+        <div class="logbox">
+            <h1>ID CARD REGISTRATION FORM</h1>
+            <label for="name" style="margin-left: -50px;">Name</label><br>
+            <input type="text" name="text" placeholder="Enter name" id="name" required><br>
+            <label for="user" style="margin-left: -20px;">Username</label><br>
+            <input type="text" name="text" placeholder="Enter Username" id="user" required><br>
+            <label for="email" style="margin-left: -50px;">Email</label><br>
+            <input type="text" name="text" placeholder="Enter Email" id="email"  required><br>
+            <label for="phno" style="margin-left: -10px;">Mobile No</label><br>
+            <input type="text" name="text" placeholder="Enter phno" id="phno" pattern="[0-9]{10}" required><br>
+            <label for="pswd" style="margin-left: -10px;">Password</label><br>
+            <input type="password" name="text" placeholder="Enter Password" id="pswd" size="10" required><br>
+            <label for="cpswd" style="padding-left: 52px;">Confirm Password</label><br>
+            <input type="password" name="text" placeholder="Confirm Password" id="cpswd" size="10" required><br>
+            <input type="submit" value="submit" style="color: maroon;background-color: aqua;margin-top: 20px; width: 50;height: 30px;font-size: large; cursor: pointer;"><br>
+        </div>
+    </form>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="register.css">
+    <script src="register.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="regcard">
+            <h1>REFISTER FORM</h1>
+            <form >
+                <label for="name">Name</label><br>
+                <input type="text" name="name" id="name" placeholder=""><br>
+                <label for="uname">User Name</label><br>
+                <input type="text" name="name" id="uname" placeholder=""><br>
+                <label for="email">Email</label><br>
+                <input type="email" name="email" id="email" placeholder=""><br>
+                <label for="pswd">Password</label><br>
+                <input type="password" name="pswd" id="pswd" placeholder="" required><br>
+                <label class="cpswd" for="cpswd">Confirm Password</label><br>
+                <input type="password" name="cpswd" id="cpswd" placeholder="" required><br>
+                <button type="button" onclick="details()" class="bton" id="buton">Sign up</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

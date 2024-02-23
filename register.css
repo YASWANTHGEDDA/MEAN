@@ -1,0 +1,67 @@
+body{
+    background-image: url(logback1.jpg);
+    background-size: cover;
+}
+h1{
+    text-align: center;
+    color: white;
+    padding-left: 20px;
+}
+.container{
+    text-align: center;
+    border: 7px;
+    border-style: solid;
+    width: 40%;
+    display: block;
+    margin-left: 520px;
+    margin-right: 300px;
+    font-family: sans-serif;
+    font-size: 20px;
+    height:60%;
+    color: white; 
+
+}
+.logbox{
+    text-align: center;
+    border: 7px;
+    border-style: solid;
+    width: 40%;
+    display: block;
+    margin-left: 520px;
+    margin-right: 300px;
+    font-family: sans-serif;
+    font-size: 20px;
+    height:60%;
+    color: white;
+
+}
+label{
+    padding-right: 80px;
+    padding-top: 50px;
+}
+.form input{
+    width: 200px;
+    height: 20px;
+    padding-top: 5px;
+    border-bottom: 1px solid #fff;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+    font-size: 15px;
+}
+.cpswd{
+    padding-left: 70px;
+}
+button{
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-size: 20px;
+    background-color: black;
+    padding: 15px 32px;
+    margin-top: 20px;
+}
+.error{
+    color: red;
+}

@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+}
+.wrapper{
+    width: 90%;
+    height: 70vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-right: 220px;
+}
+.txt{
+    flex-basis: 45%;
+}
+.brand{
+    background-color: blue;
+    width: fit-content;
+    color: #fff;
+    font-size: 10px;
+    padding: 2px 5px;
+}
+h2{
+    font-size: 35px;
+    color: #555;
+    margin-bottom: 20px;
+}
+.review{
+    background-color: rgb(0,100,0);
+    display: inline-block;
+    color: #fff;
+    padding: 4px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.price{
+    color: rgb(30,28,28);
+    font-size: 26px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+.price-box{
+    display: flex;
+    align-items: center;
+}
+input{
+    width: 30px;
+    border: 1px solid #ccc;
+    font-weight: bold;
+    text-align: center;
+}
+button{
+    width: 120px;
+    color: #fff;
+    font-size: 15px;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    background-color: #fe980f;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+}

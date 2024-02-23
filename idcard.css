@@ -1,0 +1,95 @@
+.mainlayout{
+    width: 320px;
+    height: 480px;
+    margin-left: 300px;
+    margin-right: 300px;
+    border: 20px;
+    border: 9px;
+    border-style: solid;
+    display: block;
+    border-radius: 9px;
+}
+.clgdetails{
+    background-color: rgb(33, 248, 33);
+    height: 80px;
+}
+.logo-val{
+    position: relative;
+    margin-left: 135px;
+    margin-top: -120px;
+}
+.logo-val-txt{
+    position: relative;
+    left: 185px;
+    top: -35px;
+}
+.middleblock{
+    width: 150px;
+    height: 150px;
+    color: orangered;
+    border: 3px;
+    border-style: solid;
+    margin-left: 90px;
+    font-family: sans-serif;
+    margin-top: -20px;
+}
+.details{
+    text-align: center;
+    color: orangered;
+}
+.finalblock1{
+    width: 200px;
+    height: 74px;
+    background-color: rgba(2, 120, 2, 0.904);
+    color: yellow;
+    font-size: small;
+}
+.finalblock2{
+    width: 120px;
+    height: 74px;
+    background-color: rgba(2, 120, 2, 0.904);
+    color: yellow;
+    font-size: small;
+    margin-left: 200px;
+    position: relative;
+    bottom: 74px;
+}
+.sign{
+    position: relative;
+    left: 50px;
+    bottom : 20px; 
+}
+.clg-code{
+    color: rgb(39,39,120);
+    text-align: left;
+    margin-top: -2px;
+    position: relative;
+    left: 50px;
+    font-size: 50px;
+    font-family: sans-serif;
+    top: -5px;
+}
+.clg-name2{
+    position: absolute;
+    top :0px;
+    left:490px;
+    font-family: sans-serif;
+    font-size: 1rem;
+    color:rgb(39, 39, 120);
+}
+.code-exe{
+    color: rgb(42, 185, 237);
+    font-family: sans-serif;
+    position: relative;
+    left :50px;
+    top:-68px;
+    font-size: 20px;
+}
+.address{
+    color: orangered;
+    font-family: sans-serif;
+    position: relative;
+    left :50px;
+    top:-95px;
+    font-size: 15px;
+}
