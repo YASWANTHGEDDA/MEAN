@@ -26,7 +26,7 @@
                         <strike>&#8377; 85,999</strike>
                     </div>
                     <p>Quantity<input type="text" value="1"></p>
-                    <button>Add to cart</button>
+                    <button onclick="carts();">Add to cart</button>
                     <button style="background-color: rgb(201,97,57);">Buy now</button>
                 </div>
             </div>
@@ -51,7 +51,7 @@
                         <strike>&#8377; 1,14,999</strike>
                     </div>
                     <p>Quantity<input type="text" value="1"></p>
-                    <button>Add to cart</button>
+                    <button onclick="carts();">Add to cart</button>
                     <button style="background-color: rgb(201,97,57);">Buy now</button>
                 </div>
             </div>
@@ -76,7 +76,7 @@
                         <strike>&#8377; 54,999</strike>
                     </div>
                     <p>Quantity<input type="text" value="1"></p>
-                    <button>Add to cart</button>
+                    <button onclick="carts();">Add to cart</button>
                     <button style="background-color: rgb(201,97,57);">Buy now</button>
                 </div>
             </div>
@@ -101,11 +101,18 @@
                         <strike>&#8377; 40,999</strike>
                     </div>
                     <p>Quantity<input type="text" value="1"></p>
-                    <button>Add to cart</button>
+                    <button onclick="carts();">Add to cart</button>
                     <button style="background-color: rgb(201,97,57);">Buy now</button>
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        let cart=0;
+        function carts(){
+            cart++;
+            alert(`${cart} item is added to cart`);
+        }
+    </script>
 </body>
 </html>
