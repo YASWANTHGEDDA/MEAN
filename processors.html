@@ -26,10 +26,7 @@
                         <strike>&#8377; 7,999</strike>
                     </div>
                     <p>Quantity<input type="text" value="1"></p>
-                    <button onclick="
-                        cart++;
-                        alert(`${cart} item added to cart`);
-                    ">Add to cart</button>
+                    <button onclick="carts();">Add to cart</button>
                     <button style="background-color: rgb(201,97,57);">Buy now</button>
                 </div>
             </div>
@@ -54,10 +51,7 @@
                         <strike>&#8377; 15,999</strike>
                     </div>
                     <p>Quantity<input type="text" value="1"></p>
-                    <button onclick="
-                        cart++;
-                        alert(`${cart} item added to cart`);
-                    ">Add to cart</button>
+                    <button onclick="carts();">Add to cart</button>
                     <button style="background-color: rgb(201,97,57);">Buy now</button>
                 </div>
             </div>
@@ -82,10 +76,7 @@
                         <strike>&#8377; 18,999</strike>
                     </div>
                     <p>Quantity<input type="text" value="1"></p>
-                    <button onclick="
-                        cart++;
-                        alert(`${cart} item added to cart`);
-                    ">Add to cart</button>
+                    <button onclick="carts();">Add to cart</button>
                     <button style="background-color: rgb(201,97,57);">Buy now</button>
                 </div>
             </div>
@@ -110,10 +101,7 @@
                         <strike>&#8377; 24,999</strike>
                     </div>
                     <p>Quantity<input type="text" value="1"></p>
-                    <button onclick="
-                        cart++;
-                        alert(`${cart} item added to cart`);
-                    ">Add to cart</button>
+                    <button onclick="carts();">Add to cart</button>
                     <button style="background-color: rgb(201,97,57);">Buy now</button>
                 </div>
             </div>
@@ -121,6 +109,10 @@
     </div>
     <script>
         let cart = 0;
+        function carts(){
+            cart++;
+            alert(`${cart} item added to cart`);
+        }
     </script>
 </body>
 </html>
