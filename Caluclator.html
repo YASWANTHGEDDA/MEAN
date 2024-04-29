@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .border{
+            width: 300px; 
+            margin: 50px auto; 
+            background-color: #333; 
+            padding: 20px; border-radius: 10px; 
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        }
+        #display { width: calc(100% - 
+            40px); padding: 10px; 
+            margin-bottom: 10px; 
+            border: none; border-radius: 5px; background-color: #444; color: #fff; 
+            font-size: 20px; 
+        } 
+        .buttons { display: grid; grid-template-columns: repeat(4, 1fr); grid-gap: 10px; 
+            padding-top: 20px;
+        } 
+        button{
+            font-size: 18px;
+            padding: 10px;
+            border-radius: 9px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="padding-left: 40%;">Caluclator</h1>
+    <div class="border">
+        <div class="display">
+            <input type="text" id="display" readonly>
+        </div>
+        <div class="buttons">
+            <button style="background-color: gray;" onclick="clearDisplay()">CE</button>
+            <button class="operator" onclick="appendToDisplay('(')">(</button>
+            <button class="operator" onclick="appendToDisplay(')')">)</button>
+            <button style="background-color: red;" onclick="deleteLast()">DEL</button>
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button class="operator" onclick="appendToDisplay('/')">/</button>
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button class="operator" onclick="appendToDisplay('*')">*</button>
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button class="operator" onclick="appendToDisplay('-')">-</button>
+            <button onclick="appendToDisplay('0')">0</button>
+            <button class="operator" onclick="appendToDisplay('.')">.</button>
+            <button class="operator" onclick="appendToDisplay('+')">+</button>
+            <button style="background-color: orangered;" onclick="calculate()">=</button>
+        </div>
+    </div>
+</body>
+<script>
+let display = document.getElementById('display'); 
+    function appendToDisplay(value) { 
+            display.value += value; 
+            } 
+            function clearDisplay() {
+            display.value = ''; 
+            } 
+            function calculate() {
+            try { 
+            display.value = eval(display.value); 
+            } catch (error) { display.value 
+            = 'Error'; 
+            } 
+            } 
+            function deleteLast() {
+            display.value = display.value.slice(0, -1); 
+            } 
+            // Handle backspace key press 
+            document.addEventListener('keydown', function(event) {
+            if (event.key === 'Backspace') { 
+            deleteLast(); 
+            } 
+            }); 
+</script>
+</html>
